@@ -1,0 +1,46 @@
+@import "reset.css";
+
+html,body{
+  height: 100%;
+  overflow: hidden;
+}
+
+.menu {
+  padding: 0 10px;
+  width: 200px;
+  height: 100%;
+  background: #3f87a6;
+  background: linear-gradient(0.65turn, #3f87a6, #ebf8e1, #f69d3c);
+  overflow: auto;
+
+  h3 {
+    position: relative;
+    padding-left: 20px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: normal;
+
+    em {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -8px;
+      width: 16px;
+      height: 16px;
+
+      &.plus {
+        background: forestgreen url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWElEQVQ4T2NkwAPOnz+vysDA8NvQ0PABLmWM+Aw4e/bs1P///781MTGpGzWAlmFw5swZZUZGxlgcoezFwMDwnYGBYT82eVZW1kWMFBswmg4YBnleICY7AwA5cnVB8NacgwAAAABJRU5ErkJggg==') no-repeat;
+      }
+
+      &.minus {
+        background: forestgreen url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAANUlEQVQ4T2NkoBAwUqifYdQABiqGwdmzZ/+TEiPGxsbgCIDHAsUGkGI7strRdEDNdEBuLAAA3cgIEfEqbmYAAAAASUVORK5CYII=') no-repeat;
+      }
+    }
+  }
+
+  .level2, .level3, .level4  {
+    display: none;
+    margin-left: 20px;
+  }
+}
+
