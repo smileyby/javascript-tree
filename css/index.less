@@ -1,6 +1,6 @@
 @import "reset.css";
 
-html,body{
+html, body {
   height: 100%;
   overflow: hidden;
 }
@@ -29,18 +29,39 @@ html,body{
       height: 16px;
 
       &.plus {
-        background: forestgreen url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWElEQVQ4T2NkwAPOnz+vysDA8NvQ0PABLmWM+Aw4e/bs1P///781MTGpGzWAlmFw5swZZUZGxlgcoezFwMDwnYGBYT82eVZW1kWMFBswmg4YBnleICY7AwA5cnVB8NacgwAAAABJRU5ErkJggg==') no-repeat;
+        background: #f69d3c url('../img/plus.png') no-repeat;
       }
 
       &.minus {
-        background: forestgreen url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAANUlEQVQ4T2NkoBAwUqifYdQABiqGwdmzZ/+TEiPGxsbgCIDHAsUGkGI7strRdEDNdEBuLAAA3cgIEfEqbmYAAAAASUVORK5CYII=') no-repeat;
+        background: #f69d3c url('../img/minus.png') no-repeat;
       }
     }
   }
 
-  .level2, .level3, .level4  {
+  .level2, .level3, .level4 {
     display: none;
     margin-left: 20px;
   }
 }
 
+.anim-opacity{
+  animation: 1.6s opacity 0s 1;
+  -webkit-animation: 1.6s opacity 0s 1;
+  -moz-animation: 1.6s opacity 0s 1;
+}
+
+@keyframes opacity{
+  0%{opacity:0}
+  50%{opacity:.6;}
+  100%{opacity:1;}
+}
+@-webkit-keyframes opacity{
+  0%{opacity:0}
+  50%{opacity:.6;}
+  100%{opacity:1;}
+}
+@-moz-keyframes opacity{
+  0%{opacity:0}
+  50%{opacity:.6;}
+  100%{opacity:1;}
+}
